@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bmiActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWeight"
+        android:layout_width="350dp"
+        android:layout_height="131dp"
+        android:translationY="50dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="۰dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وزن:"
+                android:textAlignment="textEnd"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                android:translationX="280dp"
+                android:translationY="20dp"
+                tools:ignore="HardcodedText,TextContrastCheck"
+                tools:layout_editor_absoluteX="۵۰dp"
+                tools:layout_editor_absoluteY="۵۰dp" />
+
+            <EditText
+                android:id="@+id/etWeight"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                android:translationX="100dp"
+                android:translationY="40dp"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                tools:layout_editor_absoluteX="۷۴dp"
+                tools:layout_editor_absoluteY="۴۰dp" />
+
+            <TextView
+                android:id="@+id/etkg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کیلوگرم"
+                android:textSize="16sp"
+                android:translationX="50dp"
+                android:translationY="70dp"
+                tools:ignore="HardcodedText,TextContrastCheck"
+                tools:layout_editor_absoluteX="۱۷dp"
+                tools:layout_editor_absoluteY="۴۲dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWeight"
+        android:layout_width="350dp"
+        android:layout_height="131dp"
+        android:translationY="200dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="۰dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="قد:"
+                android:textAlignment="textEnd"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                android:translationX="280dp"
+                android:translationY="20dp"
+                tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck"
+                tools:layout_editor_absoluteX="۵۰dp"
+                tools:layout_editor_absoluteY="۵۰dp" />
+
+            <EditText
+                android:id="@+id/etHeight"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="24sp"
+                android:textStyle="bold|italic"
+                android:translationX="100dp"
+                android:translationY="40dp"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                tools:layout_editor_absoluteX="۷۴dp"
+                tools:layout_editor_absoluteY="۴۰dp" />
+
+            <TextView
+                android:id="@+id/etCm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سانتی متر"
+                android:textSize="16sp"
+                android:translationX="30dp"
+                android:translationY="70dp"
+                tools:ignore="HardcodedText,TextContrastCheck"
+                tools:layout_editor_absoluteX="۱۷dp"
+                tools:layout_editor_absoluteY="۴۲dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:backgroundTintMode="add"
+        android:elevation="20dp"
+        android:text="اندازه گیری"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:translationX="130dp"
+        android:translationY="350dp"
+        app:cornerRadius="15dp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="۱۵۰dp"
+        tools:layout_editor_absoluteY="۳۷۸dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:translationY="430dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteY="۴۷۳dp">
+
+        <TextView
+            android:id="@+id/tvIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,InefficientWeight,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="نسبت سلامت بدن"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:translationY="50dp"
+            tools:ignore="HardcodedText,InefficientWeight,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#2C8A29"
+            android:textSize="20sp"
+            android:translationY="115dp"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

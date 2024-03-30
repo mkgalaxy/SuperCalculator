@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeCurrencyActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:translationX="100dp"
+        app:srcCompat="@drawable/currency"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/txtSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="number|numberDecimal"
+        android:padding="10dp"
+        android:textSize="20sp"
+        tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnSpinner"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundbutton"
+        android:text="@string/btntxt"
+        android:textSize="24sp"
+        android:translationX="70dp"
+        android:translationY="250dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@color/purple_500"
+        android:translationY="-50dp"
+        tools:ignore="UselessLeaf">
+
+        <RadioButton
+            android:id="@+id/dollar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="دلار$"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <RadioButton
+            android:id="@+id/euro"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="یورو€"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationY="-50dp"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,VisualLintBounds" />
+
+        <RadioButton
+            android:id="@+id/pound"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="پوند£"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-50dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/dirham"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:minHeight="48dp"
+            android:text="درهم د.اء"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationY="-100dp"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/yuan"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="یواآن 元"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-100dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/lira"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="لیرTRY"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:translationY="-150dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/dinar"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="دینار   د.ک"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:translationX="180dp"
+            android:translationY="-150dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/yen"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="ین ژاپن"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:translationY="-200dp"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+</LinearLayout>
